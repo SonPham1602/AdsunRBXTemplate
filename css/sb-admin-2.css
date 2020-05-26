@@ -11031,3 +11031,34 @@ body.sidebar-toggled footer.sticky-footer {
   border: 1px solid #4E73DF;
   color:#4E73DF ;
 }
+._caller{
+  display: none;
+  color: white;
+  position: fixed;
+  background-color:rgba(90, 92, 105, 0.5);
+  width: 300px;
+  height: 200px;
+  z-index: 100;
+  right: 10px;
+  bottom: 70px;
+}
+.aspectCall{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.aspectCall i{
+  font-size: 35px;
+  margin-top: 16px;
+}
+.cancelCall{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cancelCall i{
+  font-size: 35px;
+  margin-top: 16px;
+}
