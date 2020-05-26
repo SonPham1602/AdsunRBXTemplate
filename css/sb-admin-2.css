@@ -11032,11 +11032,11 @@ body.sidebar-toggled footer.sticky-footer {
   color:#4E73DF ;
 }
 ._caller{
-  display: none;
+  /* display: none; */
   color: white;
   position: fixed;
-  background-color:rgba(90, 92, 105, 0.5);
-  width: 300px;
+  background-color:rgba(90, 92, 105, 0.75);
+  width: 330px;
   height: 200px;
   z-index: 100;
   right: 10px;
@@ -11063,4 +11063,31 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 35px;
   margin-top: 9px;
   margin-left: 2px;
+}
+._callerAccept{
+  display: none;
+  color: white;
+  position: fixed;
+  background-color:rgba(90, 92, 105, 0.75);
+  width: 330px;
+  height: 200px;
+  z-index: 100;
+  right: 10px;
+  bottom: 70px;
+}
+.transferCall{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.transferCall  i{
+  font-size: 35px;
+  margin-top: 9px;
+  margin-left: 2px;
+}
+.buttonAcceptCallerPhone{
+  bottom: 0px;
+  left: 1rem;
+  right: 1rem;
 }
