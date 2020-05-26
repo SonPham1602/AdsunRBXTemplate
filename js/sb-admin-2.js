@@ -46,6 +46,23 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+  $("#_loginButton").on('click',function(e){
+    let userId = $("#exampleInputEmail").val()
+    let password =$("#exampleInputPassword").val()
+    console.log(userId,password);
+    
+    if(userId==='admin' && password === '123')
+    {
+      console.log("ok");
+      
+      window.location.replace("index.html")
+    }
+    else if(userId==='user' && password ==='123')
+    {
+      window.location.replace("indexCommonUser.html")
+    }
+  }
+  )
 
   //Add fake data CSKH 
   for(var i = 0;i<20;i++)
@@ -84,23 +101,7 @@
     }
     $("#listCSKH2").append(item)
   }
-  $("#_loginButton").click(function()
-  {
-    let userId = $("#exampleInputEmail").val()
-    let password =$("#exampleInputPassword").val()
-    console.log(userId,password);
-    
-    if(userId==='admin' && password === '123')
-    {
-      console.log("ok");
-      
-      window.location.replace("index.html")
-    }
-    else if(userId==='user' && password ==='123')
-    {
-      window.location.replace("indexCommonUser.html")
-    }
-  }
-  )
+
+  
 
 })(jQuery); // End of use strict

@@ -1001,6 +1001,18 @@ var data = [{"id":1,"firstName":"Zak","lastName":"Nairns","phone":"6497869256","
 {"id":1000,"firstName":"Arni","lastName":"Van Bruggen","phone":"3276718545","state":"Mới","createTime":"2019-06-09 07:04:44","createUser":"avanbruggenrr"}]
 
 $(document).ready(function() {
+    $("#dataTableHistory").DataTable({
+      "data" : data,
+      "columns" : [
+          { "data" : "id" },
+          { "data" : "firstName" },
+          { "data" : "lastName" },
+          { "data" : "state" },
+          { "data" : "createTime" },
+          { "data" : "createUser" },
+        
+      ]
+  });
     $('#dataTable').DataTable({
       "data" : data,
       "columns" : [
