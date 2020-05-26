@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Adsun RBX - Tickets</title>
+	<title>Adsun RBX - Contacts</title>
 
 	<!-- Custom fonts for this template -->
 	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,9 +24,12 @@
 	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body id="page-top">
+
+	
 
 	<!-- Page Wrapper -->
 	<div id="wrapper">
@@ -43,18 +46,13 @@
 			<hr class="sidebar-divider my-0">
 
 			<!-- Nav Item - Dashboard -->
-		
-			<!-- Divider -->
-			<!-- Divider -->
-
-			<!-- Nav Item - Dashboard -->
-			<li class="nav-item active">
+			<li class="nav-item ">
 				<a class="nav-link" href="indexCommonUser.html">
 					<i class="fas fa-fw fa-clipboard-list"></i>
 					<span>Tickets</span></a>
 			</li>
 
-			<li class="nav-item">
+			<li class="nav-item ">
 				<a class="nav-link" href="popup.html">
 					<i class="fas fa-fw fa-headset"></i>
 					<span>Pop-up</span></a>
@@ -68,12 +66,11 @@
 					<i class=" fa-fw fas fa-users"></i>
 					<span>Contacts</span></a>
 			</li>
-			<li class="nav-item ">
+			<li class="nav-item">
 				<a class="nav-link" href="generalReport.html">
 					<i class=" fa-fw fas fa-file-alt"></i>
 					<span>General Reports</span></a>
 			</li>
-
 
 			<!-- Divider -->
 
@@ -120,13 +117,17 @@
 							<!-- Dropdown - User Information -->
 							<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
 								aria-labelledby="userDropdown">
-								<a class="dropdown-item" href="/userInfo.html">
+								<a class="dropdown-item" href="#">
 									<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
 									Profile
 								</a>
 								<a class="dropdown-item" href="#">
 									<i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
 									Settings
+								</a>
+								<a class="dropdown-item" href="#">
+									<i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+									Activity Log
 								</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -145,29 +146,48 @@
 				<div class="container-fluid">
 
 					<!-- Page Heading -->
-					<h1 class="h3 mb-2 text-gray-800">Tickets</h1>
+					<h1 class="h3 mb-2 text-gray-800">Your Profile</h1>
 
+					<div class="row">
+						<div class="col">
+							<div class="card shadow mb-4">
+								<div class="card-body">
+									<div class="d-flex align-items-center mt-2">
+										<div class="w-25">
+											<label>User ID</label>
+										</div>
 
-					<!-- DataTales Example -->
-					<div class="card shadow mb-4">
-						<div class="card-body">
-							<div class="table-responsive">
-								<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-									<thead>
-										<tr>
-											<th>No.</th>
-											<th>Name</th>
-											<th>Phone</th>
-											<th>Content</th>
-											<th>State</th>
-											<th>Create Time</th>
-											<th>Create User</th>
-										</tr>
-									</thead>
-								</table>
+										<input class="form-control bg-light" value="user" />
+									</div>
+									<div class="d-flex align-items-center  mt-2">
+										<div class="w-25">
+											<label>Name</label>
+										</div>
+
+										<input class="form-control bg-light" value="Ngọc Sơn" />
+									</div>
+									<div class="d-flex align-items-center  mt-2">
+										<div class="w-25">
+											<label>Company</label>
+										</div>
+
+										<input class="form-control bg-light" value="Enterprise" />
+									</div>
+									<div class="d-flex align-items-center  mt-2">
+										<div class="w-25">
+											<label>Account Status</label>
+										</div>
+
+										<input class="form-control bg-light" value="No Lock" />
+									</div>
+								</div>
 							</div>
 						</div>
+
 					</div>
+					<!-- DataTales Example -->
+				
+				
 
 				</div>
 				<!-- /.container-fluid -->

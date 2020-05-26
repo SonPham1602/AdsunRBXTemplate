@@ -11050,7 +11050,8 @@ body.sidebar-toggled footer.sticky-footer {
 }
 .aspectCall i{
   font-size: 35px;
-  margin-top: 16px;
+  margin-top: 9px;
+  margin-left: 7px;
 }
 .cancelCall{
   width: 70px;
@@ -11060,5 +11061,6 @@ body.sidebar-toggled footer.sticky-footer {
 }
 .cancelCall i{
   font-size: 35px;
-  margin-top: 16px;
+  margin-top: 9px;
+  margin-left: 2px;
 }
