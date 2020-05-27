@@ -29,13 +29,13 @@
 
 <body id="page-top">
 	<div class="_callerAccept card shadow p-3 text-center " id="acceptCallerPhone">
-		<div >
+		<div>
 			<h3>Quốc Phong</h3>
 			<h5>0388249061</h4>
-			<h6 id="timeCaller"></h6>
+				<h6 id="timeCaller"></h6>
 		</div>
 		<div class="d-flex justify-content-between position-absolute buttonAcceptCallerPhone" style="bottom: 0px;">
-			
+
 
 			<div>
 				<div class="btn-warning btn  transferCall">
@@ -54,20 +54,20 @@
 					<label>Decline</label>
 				</div>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 
 	<div class="_caller card shadow p-3 text-center" id="callerPhone">
-		<div >
+		<div>
 			<h3>Quốc Phong</h3>
 			<h5>0388249061</h4>
 		</div>
 		<div class="d-flex justify-content-between ">
 			<div>
 				<div class="btn-success btn aspectCall">
-					<i class="fas fa-phone-alt" ></i>
+					<i class="fas fa-phone-alt"></i>
 				</div>
 				<div>
 					<label>Accept</label>
@@ -91,8 +91,8 @@
 					<label>Decline</label>
 				</div>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 	<!-- Page Wrapper -->
@@ -117,9 +117,20 @@
 			</li>
 
 			<li class="nav-item active">
-				<a class="nav-link" href="popup.html">
+				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePopup"
+					aria-expanded="true" aria-controls="collapsePages">
 					<i class="fas fa-fw fa-headset"></i>
-					<span>Pop-up</span></a>
+					<span>Pop-up</span>
+				</a>
+				<div id="collapsePopup" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<a class="collapse-item" href="/caller.html">Local Call</a>
+						<a class="collapse-item" href="">Outside Call</a>
+						<a class="collapse-item" href="/popup.html">Last Ticket</a>
+						<a class="collapse-item" href="">Call History</a>
+
+					</div>
+				</div>
 			</li>
 
 			<!-- Divider -->
@@ -130,10 +141,22 @@
 					<i class=" fa-fw fas fa-users"></i>
 					<span>Contacts</span></a>
 			</li>
-			<li class="nav-item ">
-				<a class="nav-link" href="index.html">
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+					aria-expanded="true" aria-controls="collapsePages">
 					<i class=" fa-fw fas fa-file-alt"></i>
-					<span>General Reports</span></a>
+					<span>General Reports</span>
+				</a>
+				<div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<a class="collapse-item" href="">Outgoings</a>
+						<a class="collapse-item" href="">Incomings</a>
+						<a class="collapse-item" href="">Local Call</a>
+						<a class="collapse-item" href="">Voice Mail</a>
+
+					</div>
+				</div>
 			</li>
 
 			<!-- Divider -->
@@ -248,9 +271,10 @@
 											<h6 class="m-0 font-weight-bold text-primary">History of Customer</h6>
 										</div>
 										<div class="card-body">
-											
+
 											<div class="table-responsive">
-												<table class="table table-bordered" id="dataTableHistory" width="100%" cellspacing="0">
+												<table class="table table-bordered" id="dataTableHistory" width="100%"
+													cellspacing="0">
 													<thead>
 														<tr>
 															<th>No.</th>
@@ -291,13 +315,13 @@
 											<div class="w-25">
 												<label>Email</label>
 											</div>
-											<input class="form-control bg-light"/>
+											<input class="form-control bg-light" />
 										</div>
 										<div class="d-flex  align-items-center mt-2">
 											<div class="w-25">
 												<label>Status</label>
 											</div>
-											<input class="form-control bg-light"  />
+											<input class="form-control bg-light" />
 										</div>
 										<div class="d-flex  align-items-center mt-2">
 											<div class="w-25">
@@ -329,13 +353,13 @@
 											<div class="w-25">
 												<label>Note</label>
 											</div>
-											<textarea class="form-control bg-light" ></textarea>
+											<textarea class="form-control bg-light"></textarea>
 										</div>
 										<div class="d-flex  align-items-center mt-2">
 											<div class="w-25">
 												<label>Comment</label>
 											</div>
-											<textarea class="form-control bg-light" ></textarea>
+											<textarea class="form-control bg-light"></textarea>
 										</div>
 										<div class="text-center mt-2">
 											<a class="btn btn-primary ">

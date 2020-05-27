@@ -101,6 +101,29 @@
     }
     $("#listCSKH2").append(item)
   }
+  var openCaller = false
+  $("#openPanelPhone").on('click',function(){
+    if(openCaller==false)
+    {
+      $(".phonePanel").animate({
+        right: "+=350",
+      }, 200, function() {
+        openCaller = true
+      });
+    }
+  
+  })
+  $("#closePanelPhone").on('click',function(){
+    if(openCaller==true)
+    {
+      $(".phonePanel").animate({
+        right: "-=350",
+      }, 200, function() {
+        openCaller = false
+        // Animation complete.
+      });
+    }
+  })
 
   
 
