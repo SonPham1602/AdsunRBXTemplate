@@ -124,6 +124,37 @@
       });
     }
   })
+  $("#callButton").on('click',function()
+  {
+    var value =   $(".numberPhoneInput").val()
+    if(value!="")
+    {
+      $(".phonePanel").animate({
+        right: "-=350",
+      }, 200, function() {
+        openCaller = false
+        $("#phoneNumberGo").text(value)
+        $("#GoingCallerPhone").animate({
+          right: "+=300",
+        }, 200, function() {
+        
+          // Animation complete.
+        });
+        // Animation complete.
+      });
+    }
+  
+
+  })
+  $("#cancelGoingCaller").click(function()
+  {
+    $("#GoingCallerPhone").animate({
+      right: "-=300",
+    }, 200, function() {
+    
+      // Animation complete.
+    });
+  })
 
   
 
